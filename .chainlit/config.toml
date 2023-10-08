@@ -1,0 +1,51 @@
+# Whether to enable telemetry (default: true). No personal data is collected.
+enable_telemetry = true
+
+# List of environment variables to be provided by each user to use the app.
+user_env = []
+
+# Duration (in seconds) during which the session is saved when the connection is lost
+session_timeout = 3600
+
+# Enable third parties caching (e.g LangChain cache)
+cache = false
+
+# Follow symlink for asset mount (see https://github.com/Chainlit/chainlit/issues/317)
+# follow_symlink = false
+
+[features]
+
+# Show the prompt playground  
+prompt_playground = true
+
+[UI]
+
+name = "Chatbot"
+
+[UI.theme.light]
+background = "#ddd"
+
+[UI.theme.light.text]  
+primary = "#fff"
+
+# Set maroon primary color 
+[UI.theme.light.primary]  
+main = "#8C001A"
+
+# Set bright red accent color
+[UI.theme.light.secondary]
+main = "#FF0000" 
+
+# Set maroon primary color
+[UI.theme.dark.primary] 
+main = "#8C001A"
+
+# Set bright red accent color 
+[UI.theme.dark.secondary]
+main = "#FF0000"
+
+# Other UI config options...
+
+[meta]
+
+generated_by = "0.7.0"
