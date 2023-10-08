@@ -1,3 +1,8 @@
+# Warning
+Please download llama-2-7b-chat.ggmlv3.q8_0. bin
+and keep it root directory (Estiated 7.3 GiB) 
+Download from https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML
+
 # AskAway - HackUTA 2023 🚀🚀🚀
 This project was built for HackUTA 2023 to demonstrate an LLM which can  be trained and ran offline on local host. 
 
