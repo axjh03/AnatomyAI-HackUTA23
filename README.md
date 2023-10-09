@@ -1,3 +1,9 @@
+# DevPost
+
+https://devpost.com/software/askaway-snz51g?ref_content=my-projects-tab&ref_feature=my_projects
+
+The person showcasing the project is Mr.Ribesh Joshi.
+
 # Warning
 Please download llama-2-7b-chat.ggmlv3.q8_0. bin
 and keep it root directory (Estimated 7.3 GiB) 
