@@ -1,5 +1,5 @@
 [build]
-  command = "python file_downloadLLM.py && python ingest.py && chainlit run model.py"
+  command = "python downloadLLM.py && python ingest.py && chainlit run model.py"
   functions = "functions"
   publish = "dist"
 
