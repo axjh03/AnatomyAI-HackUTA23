@@ -1,0 +1,7 @@
+[build]
+  command = "python ingest.py && chainlit run model.py"
+  functions = "functions"
+  publish = "dist"
+
+[functions]
+  directory = "functions"
