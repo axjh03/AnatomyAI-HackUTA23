@@ -3,16 +3,16 @@
     "builds": [
       {
         "src": "model.py",
-        "use": "@vercel/python"
+        "use": "@vercel/python",
+        "config": {
+          "runtime": "python3.9"
+        }
       }
     ],
-    "build": {
-      "env": {
-        "PYTHON_VERSION": "3.9"
-      }
-    },
     "functions": {
-      "source": "functions"
+      "api/index.py": {
+        "runtime": "@vercel/python"
+      }
     },
     "routes": [
       { "handle": "filesystem" },
