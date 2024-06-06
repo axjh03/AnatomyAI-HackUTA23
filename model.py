@@ -44,7 +44,8 @@ def load_llm():
 
     llm = ctransformers.CTransformers(
 
-        model="llama-2-7b-chat.ggmlv3.q8_0.bin",
+        # old model = llama-2-7b-chat.ggmlv3.q8_0.bin
+        model="llama-2-7b-chat.ggmlv3.q4_0.bin",
 
         model_type='llama',
 
