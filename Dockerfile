@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install necessary packages
 RUN apt-get update && \
-    apt-get install -y gcc python3-dev && \
+    apt-get install -y gcc python3-dev python3-venv && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -16,12 +16,12 @@ COPY . /app
 # Install virtualenv
 RUN pip install virtualenv
 
-# Create and activate virtual environment, install dependencies, and Chainlit
-RUN python3 -m venv env && \
-    /bin/bash -c "source env/bin/activate && \
-    pip install --no-cache-dir -r requirements.txt && \
-    pip install chainlit && \
-    pip install langchain_community"
+# Create virtual environment
+RUN python3 -m venv env
+
+# Activate virtual environment and install dependencies
+RUN /bin/bash -c "source env/bin/activate && pip install --no-cache-dir -r requirements.txt"
+RUN /bin/bash -c "source env/bin/activate && pip install chainlit langchain_community"
 
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
