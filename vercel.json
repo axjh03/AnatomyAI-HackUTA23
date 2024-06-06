@@ -2,21 +2,16 @@
     "version": 2,
     "builds": [
       {
-        "src": "model.py",
-        "use": "@vercel/python",
+        "src": "package.json",
+        "use": "@vercel/static-build",
         "config": {
-          "runtime": "python3.9"
+          "distDir": "dist"
         }
       }
     ],
-    "functions": {
-      "api/index.py": {
-        "runtime": "@vercel/python"
-      }
-    },
     "routes": [
       { "handle": "filesystem" },
-      { "src": "/(.*)", "dest": "/" }
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
   
