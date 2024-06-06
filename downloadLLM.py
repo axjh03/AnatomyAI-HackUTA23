@@ -1,10 +1,10 @@
 import gdown
 
 # whole link
-# https://drive.google.com/file/d/1oE6xUUcM9suo9HL9E27zEi7vIO79viw2/view?usp=sharing
+# https://drive.google.com/file/d/1UtXGktAaDMCgz4CyjhXVLJy4sz6_XIwx/view?usp=sharing
 
 # File ID
-file_id = "1oE6xUUcM9suo9HL9E27zEi7vIO79viw2"
+file_id = "1UtXGktAaDMCgz4CyjhXVLJy4sz6_XIwx"
 
 # Destination path to save the file
 destination = "llama-2-7b-chat.ggmlv3.q8_0.bin"  # Replace 
