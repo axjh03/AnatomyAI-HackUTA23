@@ -15,5 +15,5 @@ with open(file_name, 'wb') as file:
     for chunk in response.iter_content(chunk_size=8192):
         if chunk:
             file.write(chunk)
-
+print("Downloading llm")
 print(f"Downloaded 'llama-2-7b-chat.ggmlv3.q4_0.bin' successfully.")
