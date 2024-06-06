@@ -23,11 +23,11 @@ RUN python3 -m venv env && \
     pip install chainlit && \
     pip install langchain_community"
 
-# Make port 8080 available to the world outside this container
-EXPOSE 8080
+# Make port 8000 available to the world outside this container
+EXPOSE 8000
 
 # Run your Python scripts and Chainlit app
 CMD /bin/bash -c "source env/bin/activate && \
     python3 downloadLLM.py && \
     python3 ingest.py && \
-    chainlit run main.py --host 0.0.0.0 --port 8080"
+    chainlit run main.py --host 0.0.0.0 --port 8000"
