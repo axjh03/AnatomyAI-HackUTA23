@@ -1,0 +1,32 @@
+docker build -t anatomyai .
+docker run -p 8000:8000 anatomyai
+
+
+  Push Your Docker Image to Docker Hub
+Log in to Docker Hub:
+
+bash
+Copy code
+docker login
+Tag your Docker image:
+
+bash
+Copy code
+docker tag anatomyai your_dockerhub_username/anatomyai:latest
+Push your Docker image:
+
+bash
+Copy code
+docker push your_dockerhub_username/anatomyai:latest
+Deploy to Hugging Face
+Create a new Space on Hugging Face by going to the Spaces page and clicking on "New Space".
+
+Choose the Docker runtime for your Space.
+
+Configure your Space:
+
+In the Space settings, provide the name of your Docker image (your_dockerhub_username/anatomyai:latest).
+Set any necessary environment variables or secrets required by your application.
+Deploy the Space:
+
+Once you have configured the Space, Hugging Face will pull the Docker image from Docker Hub and deploy it.
