@@ -1,3 +1,6 @@
+# Demo Link
+https://huggingface.co/spaces/axjh03/anatomy/tree/main
+
 # DevPost
 
 https://devpost.com/software/askaway-snz51g?ref_content=my-projects-tab&ref_feature=my_projects
