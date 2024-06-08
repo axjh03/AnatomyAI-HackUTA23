@@ -7,12 +7,7 @@ https://devpost.com/software/askaway-snz51g?ref_content=my-projects-tab&ref_feat
 
 The person showcasing the project is Mr.Ribesh Joshi.
 
-# Warning
-Please download llama-2-7b-chat.ggmlv3.q8_0. bin
-and keep it root directory (Estimated 7.3 GiB) 
-Download from https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML
-
-# AskAway - HackUTA 2023 🚀🚀🚀
+# AnatomyAI - HackUTA 2023 🚀🚀🚀
 This project was built for HackUTA 2023 to demonstrate an LLM which can  be trained and ran offline on local host. 
 
 ## Developers
